@@ -1,5 +1,5 @@
 <h1 align="center">
-  Angularsockets
+  Mats.toreeOfc
 </h1>
 
 <p align="center">
@@ -16,9 +16,9 @@
 
 ---
 
-# 🎀 Angularsockets
+# Nyxora 
 
-> **Angularsockets** a mod og *Baileys WhatsApp Web API* by **Mr Frank** 
+> **NyxoraBaileys** a mod og *Baileys WhatsApp Web API* by **Mats.toreeOfc** 
 ---
 
 ## ✨ Mafeatures
