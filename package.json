@@ -23,10 +23,14 @@
     "WAProto/*"
   ],
   "scripts": {
+    "changelog:update": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "changelog:preview": "conventional-changelog -p angular -u",
+    "changelog:last": "conventional-changelog -p angular -r 2",
     "gen:protobuf": "sh WAProto/GenerateStatics.sh",
-    "example": "node Example/example.js",
+    "example": "node --inspect Example/example.js",
     "lint": "eslint src --ext .js",
     "lint:fix": "yarn lint --fix",
+    "release": "release-it",
     "test": "jest"
   },
   "dependencies": {
@@ -52,11 +56,25 @@
     "ws": "^8.13.0"
   },
   "devDependencies": {
+    "@adiwajshing/eslint-config": "github:adiwajshing/eslint-config",
+    "@types/got": "^9.6.11",
     "@types/jest": "^27.5.1",
     "@types/node": "^16.18.126",
+    "@types/sharp": "^0.29.4",
     "@types/ws": "^8.0.0",
+    "conventional-changelog-cli": "^2.2.2",
     "eslint": "^8.0.0",
     "jest": "^27.0.6",
+    "jimp": "^0.16.1",
+    "json": "^11.0.0",
+    "link-preview-js": "^3.0.0",
+    "open": "^8.4.2",
+    "qrcode-terminal": "^0.12.0",
+    "release-it": "^15.10.3",
+    "sharp": "^0.34.1",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.8.1",
+    "typedoc": "^0.27.9",
     "typescript": "^5.8.2"
   },
   "peerDependencies": {
@@ -65,9 +83,15 @@
     "sharp": "^0.34.1"
   },
   "peerDependenciesMeta": {
-    "link-preview-js": { "optional": true },
-    "qrcode-terminal": { "optional": true },
-    "sharp": { "optional": true }
+    "link-preview-js": {
+      "optional": true
+    },
+    "qrcode-terminal": {
+      "optional": true
+    },
+    "sharp": {
+      "optional": true
+    }
   },
   "packageManager": "yarn@1.22.19",
   "engines": {
